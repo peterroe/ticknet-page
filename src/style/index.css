@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+}
+@font-face {
+	font-family: 'llcht';
+	src: url('../assets/font/字魂2号-力量粗黑体.ttf');
+}
+@font-face {
+	font-family:'byys';
+	src: url('../assets/font/字魂45号-冰宇雅宋.ttf');
+}
+@font-face {
+	font-family:'zch';
+	src: url('../assets/font/字魂58号-创中黑.ttf');
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.el-tabs__item  {
+		color: #0077b6;
+		width: 120px;
+	}
+	.el-tabs__item:hover {
+		color: #0077b6;
+	}
+	.el-tabs__item.is-active{
+	    color: #0077b6;
+	}
+	.el-tabs__active-bar{
+		background-color:#0077b6;
+	}
+	.el-tabs__nav-wrap::after,.el-tabs__nav-scroll::after  {
+		content: '' !important;
+		height: 0px;
+	}
