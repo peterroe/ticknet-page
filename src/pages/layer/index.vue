@@ -84,6 +84,7 @@
 	import Home from '../home/index.vue'
 	import Member from '../member/index.vue'
 	import Product from '../product/index.vue'
+  import Vue from "vue";
 	export default {
 		components: {
 			Group,
@@ -168,9 +169,13 @@
 				}
 			}
 			// window.onscroll = throttle(addClass, removeClass, rocket, 50)
-			this.$nextTick(() => {
-							this.$refs.scroll.refresh()
-			})
+      Vue.nextTick(() => {
+        this.$refs.scroll.refresh()
+      })
+
+      window.addEventListener('load', () => {
+        this.$refs.scroll.refresh()
+      })
 
 			// () => {
 			// 	if(window.pageYOffset > 600) {

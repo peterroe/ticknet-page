@@ -1,6 +1,6 @@
 <template>
 	<div class="home">
-		<el-carousel trigger="click" height=100vh>
+		<el-carousel trigger="click" height="700px">
 			<el-carousel-item class="bg-one"></el-carousel-item>
 			<el-carousel-item class="bg-two"></el-carousel-item>
 			<el-carousel-item class="bg-three"></el-carousel-item>
@@ -242,17 +242,17 @@
 	}
 	.bg-one {
 		width: 100vw;
-		height: 100vh;
+		height: 100%;
 		background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
 	}
 	.bg-two {
 		width: 100vw;
-		height: 100vh;
+		height: 100%;
 		background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
 	}
 	.bg-three {
 		width: 100vw;
-		height: 100vh;
+		height: 100%;
 		background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
 	}
 </style>
