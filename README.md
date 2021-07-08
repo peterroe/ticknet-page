@@ -3,6 +3,10 @@
 ## LastUpdate: 林舒恒
 ## LastUpdateTime:2021.7.8
 
+## 安装依赖
+```shell
+npm install
+```
 ## 运行：
 ``` shell
 npm run start
