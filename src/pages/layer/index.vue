@@ -1,313 +1,360 @@
+<!--
+ * @FileDescription: layer
+ * @Author: 林舒恒
+ * @Date: 2021.4.19
+ * @LastEditors: 林舒恒
+ * @LastEditTime: 2021.5.20
+ -->
 <template>
-	<scroll class="scroll-wrapper" ref="scroll">
-		<div class="layer animated fadeIn">
-			<div class="rocket animated">
-				<img src="../../assets/rocket.png" alt="">
-			</div>
-			<div class="layer-head">
-				<el-row>
-					<el-col :span="12" class="layer-head-left">
-						TickNet工作室招新系统
-					</el-col>
-					<el-col :span="12" class="layer-head-right">
-						<el-tabs @tab-click="handleClick">
-							<el-tab-pane data-no="0" name="home" label="首页"></el-tab-pane>
-							<el-tab-pane data-no="1" name="product" label="产品介绍"></el-tab-pane>
-							<el-tab-pane data-no="2" name="group" label="组别介绍"></el-tab-pane>
-							<el-tab-pane data-no="3" name="member" label="团队成员"></el-tab-pane>
-							<el-tab-pane data-no="4" name="about" label="关于我们"></el-tab-pane>
-						</el-tabs>
-					</el-col>
-				</el-row>
-			</div>
-			<Home></Home>
-			<Product></Product>
-			<Group></Group>
-			<Member></Member>
-			<div class="layer-foot">
-				<div class="layer-foot-top">
-					<div class="top-title">
-						TickNet工作室
-					</div>
-					<div class="top-p">
-						不断成长不断进步，锐意进取的优秀团队 等待您的加入
-					</div>
-					<div class="top-bt">
-						<el-button plain>加入我们</el-button>
-					</div>
-				</div>
-				<div class="layer-foot-bottom">
-					<el-row>
-						<el-col :span="8">
-							<div class="bottom-mainTitle">Ticknet 工作室</div>
-							<div class="bottom-content">地址：湖南科技大学南校逸夫楼305</div>
-							<div class="bottom-content">电话：23897432</div>
-							<div class="bottom-content">邮箱：slkdfjsg@xxx.com</div>
-							<div class="bottom-icon">
-								<el-button icon="el-icon-message" circle></el-button>
-								<el-button icon="el-icon-star-off" circle></el-button>
-								<el-button icon="el-icon-delete" circle></el-button>
-							</div>
-							<div class="bottom-link">
-								友情链接： 百度｜新浪｜网易
-							</div>
-						</el-col>
-						<el-col :span="8">
-							<div class="bottom-sideTitle">
-								团队介绍
-							</div>
-							<div class="bottom-content">团队成员</div>
-							<div class="bottom-content">团队历史</div>
-							<div class="bottom-content">团队成就</div>
-						</el-col>
-						<el-col :span="8">
-							<div class="bottom-sideTitle">
-								服务范围
-							</div>
-							<div class="bottom-content">产品介绍</div>
-							<div class="bottom-content">组别介绍</div>
-						</el-col>
-					</el-row>
-				</div>
-			</div>
-		</div>
-	</scroll>
+    <!-- <scroll class="scroll-wrapper" ref="scroll"> -->
+    <div class="layer animated fadeIn">
+        <div class="rocket animated">
+            <img src="../../assets/rocket.png" alt="" />
+        </div>
+        <div class="layer-head">
+            <el-row class="container">
+                <el-col :xs="24" :sm="10" :span="12" class="layer-head-left">
+                    <div class="head-logo-title">
+                        <img src="../../assets/logo4.jpg" alt="" class="logo" />
+                        <span> TickNet Studio </span>
+                    </div>
+                </el-col>
+                <el-col :xs="0" :sm="14" :span="12" class="layer-head-right">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#home">首页</a></li>
+                            <li><a href="#product">产品介绍</a></li>
+                            <li><a href="#group">组别介绍</a></li>
+                            <li><a href="#member">团队成员</a></li>
+                            <li><a href="#about">关于我们</a></li>
+                        </ul>
+                    </div>
+                </el-col>
+            </el-row>
+        </div>
+        <Home></Home>
+        <Product></Product>
+        <div class="cutLine container"></div>
+        <Group></Group>
+        <Member></Member>
+        <div class="layer-foot">
+            <div id="about" class="layer-foot-bottom">
+                <el-row class="container">
+                    <el-col :xs="24" :span="16">
+                        <div class="bottom-mainTitle">Ticknet 工作室</div>
+                        <div class="bottom-content">
+                            地址：湖南科技大学南校逸夫楼308
+                        </div>
+                        <div class="bottom-content">
+                            邮箱：2402007575@qq.com
+                        </div>
+                        <div class="bottom-icon">
+                            <img src="../../assets/QQcode.png" alt="" />
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <div class="copyright">© 版权所有 湘ICP备16021626-1</div>
+                </el-row>
+            </div>
+        </div>
+    </div>
+    <!-- </scroll> -->
 </template>
 
 <script>
-	import {
-		addClass,
-		removeClass
-	} from '@/util/oprateClass.js'
-	import scroll from '@/components/scroll.vue'
-	import Group from '../group/index.vue'
-	import Home from '../home/index.vue'
-	import Member from '../member/index.vue'
-	import Product from '../product/index.vue'
-  import Vue from "vue";
-	export default {
-		components: {
-			Group,
-			Home,
-			Member,
-			Product,
-			scroll
-		},
-		data() {
-			return {
-				activelabel: '首页',
-				activeName: '/layer/home',
-				y: ''
-			}
-		},
-		methods: {
-			handleClick(e) {
-				let no = e.$el.getAttribute('data-no')
-				let tabhome = document.querySelector('#tab-home')
-				let tabproduct = document.querySelector('#tab-product')
-				let tabgroup = document.querySelector('#tab-group')
-				let tabmember = document.querySelector('#tab-member')
-				let tababout = document.querySelector('#tab-about')
+import { addClass, removeClass } from '@/util/oprateClass.js'
+// import scroll from '@/components/scroll.vue'
+import Group from '../group/index.vue'
+import Home from '../home/index.vue'
+import Member from '../member/index.vue'
+import Product from '../product/index.vue'
 
-				let home = document.querySelector('.home')
-				let product = document.querySelector('.product')
-				let group = document.querySelector('.group')
-				let member = document.querySelector('.member')
-				let about = document.querySelector('.about')
-				console.log()
-				let distence = [
-					home.offsetTop,
-					product.offsetTop,
-					group.offsetTop,
-					member.offsetTop,
-					// about.offsetTop,
-				]
-				console.log(distence)
-			}
-		},
-		watch: {
+export default {
+    components: {
+        Group,
+        Home,
+        Member,
+        Product
+        // scroll
+    },
+    data() {
+        return {
+            activelabel: '首页',
+            activeName: '/layer/home',
+            y: ''
+        }
+    },
+    watch: {},
+    mounted() {
+        const rocket = document.querySelector('.rocket')
+        rocket.addEventListener('click', () => {
+            let currentPosition = null
+            let timer = null
+            const speed = 30
+            timer = setInterval(function () {
+                currentPosition =
+                    document.documentElement.scrollTop ||
+                    document.body.scrollTop
+                currentPosition -= speed // speed变量
+                if (currentPosition > 0) {
+                    window.scrollTo(0, currentPosition)
+                } else {
+                    window.scrollTo(0, 0)
+                    clearInterval(timer)
+                }
+            }, 1)
+        })
+        function throttle(add, remove, rocket, delay) {
+            let isRun = true
+            return function (...args) {
+                if (!isRun) {
+                    return false
+                }
 
-		},
-		mounted() {
-			let rocket = document.querySelector('.rocket')
-			// rocket.addEventListener('click',() => {
-			// 	var currentPosition,timer;
-			// 		var speed=30;
-			// 		timer=setInterval(function(){
-			// 			currentPosition=document.documentElement.scrollTop || document.body.scrollTop;
-			// 			currentPosition-=speed; //speed变量
-			// 			if(currentPosition>0){
-			// 				window.scrollTo(0,currentPosition);
-			// 			}else{
-			// 				window.scrollTo(0,0);
-			// 				clearInterval(timer);
-			// 			}
-			// 		},1);
-			// })
-			function throttle(add, remove, rocket, delay) {
-				let isRun = true
-				return function(...args) {
-					console.log(45)
-					if (!isRun) {
-						return false
-					}
-					console.log(window.pageYOffset, isRun)
-					isRun = false
+                isRun = false
 
-					setTimeout(() => {
-						if (window.pageYOffset > 600) {
-							remove(rocket, 'bounceOutDown')
-							add(rocket, 'bounceInUp')
-							isRun = true
-						} else {
-							remove(rocket, 'bounceInUp')
-							add(rocket, 'bounceOutDown')
-							isRun = true
-						}
-						isRun = true
-					}, delay)
-				}
-			}
-			// window.onscroll = throttle(addClass, removeClass, rocket, 50)
-      Vue.nextTick(() => {
-        this.$refs.scroll.refresh()
-      })
+                setTimeout(() => {
+                    if (window.pageYOffset > 600) {
+                        remove(rocket, 'bounceOutDown')
+                        add(rocket, 'bounceInUp')
+                        isRun = true
+                    } else {
+                        remove(rocket, 'bounceInUp')
+                        add(rocket, 'bounceOutDown')
+                        isRun = true
+                    }
+                    isRun = true
+                }, delay)
+            }
+        }
+        window.onscroll = throttle(addClass, removeClass, rocket, 50)
+        const e = '%c'
 
-      window.addEventListener('load', () => {
-        this.$refs.scroll.refresh()
-      })
+        const n =
+            'color:#3bbcf2;text-shadow:1px 0px 1px #666; 5px 5px 2px #373E40, 5px 5px 5px #A2B4BA, 5px 5px 10px #82ABBA;font-weight:bolder;font-size:5px'
 
-			// () => {
-			// 	if(window.pageYOffset > 600) {
-
-			// 		throttle(addClass,1000)(rocket,'bounceInUp')
-			// 	}else {
-			// 		removeClass(rocket,'bounceInUp')
-			// 		throttle(addClass,1000)(rocket,'bounceOutDown')
-
-			// 	}
-			// }
-
-		},
-
-	}
+        console.log(
+            `${e}
+                -------------------------------------------------------------------------------------------------------
+              /|    ___                       ___           ___           ___           ___           ___		   	 /|
+             / |   /\\  \\          ___        /\\  \\         /\\__\\         /\\__\\         /\\  \\         /\\  \\    	    / |
+            /  |   \\:\\  \\        /\\  \\      /::\\  \\       /:/  /        /::|  |       /::\\  \\        \\:\\  \\   	   /  |
+           /   |    \\:\\  \\       \\:\\  \\    /:/\\:\\  \\     /:/__/        /:|:|  |      /:/\\:\\  \\        \\:\\  \\  	  /   |
+          /    |    /::\\  \\      /::\\__\\  /:/  \\:\\  \\   /::\\__\\____   /:/|:|  |__   /::\\~\\:\\  \\       /::\\  \\ 	 /    |
+         /	   |___/:/\\:\\__\\____/:/\\/__/_/:/__/ \\:\\__\\_/:/\\:::::\\__\\_/:/ |:| /\\__\\_/:/\\:\\ \\:\\__\\_____/:/\\:\\__\\__/     |
+         \\     |  /:/  \\/__/ /\\/:/  /    \\:\\  \\  \\/__/ \\/_|:|~~|~    \\/__|:|/:/  / \\:\\~\\:\\ \\/__/    /:/  \\/__/  \\     |
+          \\    | /:/  /      \\::/__/      \\:\\  \\          |:|  |         |:/:/  /   \\:\\ \\:\\__\\     /:/  /     	 \\    |
+           \\   | \\/__/        \\:\\__\\       \\:\\  \\         |:|  |         |::/  /     \\:\\ \\/__/     \\/__/          \\   |
+            \\  |               \\/__/        \\:\\__\\        |:|  |         /:/  /       \\:\\__\\            welcome to \\  |
+             \\ |                             \\/__/         \\|__|         \\/__/         \\/__/  		 @ticknet studio\\ |
+               -------------------------------------------------------------------------------------------------------
+	 `,
+            n
+        )
+    },
+    methods: {
+        handleClick(e) {}
+    }
+}
 </script>
 
 <style>
-	.scroll-wrapper {
-		height: 100vh;
-		overflow: hidden;
-	}
-	.layer {
-		/* overflow: hidden; */
-		position: relative;
-		font-family: 'byys';
-	}
+    .scroll-wrapper {
+        height: 100vh;
+        overflow: hidden;
+    }
+    .layer {
+        overflow: hidden;
+        position: relative;
+        font-family: 'byys';
+    }
 
-	.rocket {
-		position: fixed;
-		width: 100px;
-		/* height: 100px; */
-		z-index: 1000;
-		bottom: 200px;
-		right: 100px;
-		overflow: hidden;
-		transform: scale(0);
-		cursor: pointer;
-	}
+    .rocket {
+        position: fixed;
+        width: 100px;
+        /* height: 100px; */
+        z-index: 1000;
+        bottom: 200px;
+        right: 100px;
+        overflow: hidden;
+        transform: scale(0);
+        cursor: pointer;
+    }
 
-	.rocket img {
-		width: 100px;
-		/* height: 100px; */
+    .rocket img {
+        width: 80px;
+        /* height: 100px; */
+    }
+    @media screen and (max-width: 768px) {
+        .rocket {
+            width: 60px;
+            /* height: 100px; */
+            bottom: 40px;
+            right: 40px;
+            overflow: hidden;
+            transform: scale(0);
+            cursor: pointer;
+        }
+        .rocket img {
+            width: 60px;
+        }
+    }
+    .layer-head {
+        z-index: 999;
+        width: 100%;
+        height: 80px;
+        margin: 0 auto;
+    }
 
-	}
+    .layer-head-left {
+        padding: 15px 0;
+        height: 80px;
+        font-size: 30px;
+        /* line-height: 80px; */
+        text-align: left;
+        font-family: 'byys';
+    }
+    .head-logo-title {
+        height: 50px;
+    }
+    @media screen and (max-width: 768px) {
+        .head-logo-title {
+            text-align: center;
+        }
+    }
+    .logo {
+        top: 15px;
+        width: 50px;
+        vertical-align: middle;
+    }
+    .head-logo-title span {
+    }
+    .layer-head-right {
+        /* margin-top: 20px; */
+        margin: 0 auto;
+        height: 80px;
+        font-family: 'zch';
+    }
+    .layer-head-right .nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .layer-head-right .nav ul li {
+        width: 80px;
+        list-style: none;
+        text-decoration: none;
+        height: 80px;
+        line-height: 80px;
+    }
+    .layer-foot {
+    }
 
-	.layer-head {
-		/* position: fixed; */
-		z-index: 999;
-		width: 100%;
-		height: 80px;
-		/* background-color: #fff; */
-		margin: 0 auto;
-		border-bottom: 1px solid #33A6B8;
-	}
+    .layer-foot-top {
+        padding: 20px 40px;
+        /* height: 250px; */
+        background-color: rgb(64, 64, 64);
+    }
 
-	.layer-head-left {
-		height: 80px;
-		font-size: 30px;
-		line-height: 80px;
-		font-family: 'byys';
-	}
+    .top-title {
+        height: 100px;
+        font-size: 40px;
+        line-height: 100px;
+        color: #fff;
+    }
 
-	.layer-head-right {
-		margin-top: 20px;
-		height: 60px;
-		font-family: 'zch'
-	}
+    .top-p {
+        /* height: 50px; */
+        font-size: 20px;
+        line-height: 50px;
+        color: #fff;
+    }
 
-	.layer-foot {}
+    .top-bt {
+        height: 60px;
+        line-height: 60px;
+    }
+    .joinWe {
+        vertical-align: text-top;
+        /* line-height: 50px; */
+        /* background-color: rgb(32, 135, 219); */
+    }
+    .layer-foot-bottom {
+        text-align: left;
+        padding: 40px 0 0 0;
+        color: #fff;
+        /* height: 350px; */
+        background-color: #2d2d2d;
+    }
 
-	.layer-foot-top {
-		height: 250px;
-		background-color: rgb(64, 64, 64);
-	}
+    .layer-foot-bottom .el-col {
+        padding-left: 10%;
+    }
 
-	.top-title {
-		height: 100px;
-		font-size: 40px;
-		line-height: 100px;
-		color: #fff;
+    .bottom-mainTitle {
+        font-size: 25px;
+        height: 60px;
+        line-height: 60px;
+    }
 
-	}
+    .bottom-sideTitle {
+        color: #ddd;
+        font-size: 20px;
+        line-height: 60px;
+        height: 60px;
+    }
 
-	.top-p {
-		height: 50px;
-		font-size: 20px;
-		line-height: 50px;
-		color: #fff;
-	}
+    .bottom-content {
+        height: 30px;
+        line-height: 30px;
+    }
 
-	.top-bt {
-		height: 60px;
-		line-height: 80px;
-	}
-
-	.layer-foot-bottom {
-		text-align: left;
-		padding-top: 40px;
-		color: #fff;
-		height: 350px;
-		background-color: #2d2d2d;
-	}
-
-	.layer-foot-bottom .el-col {
-		padding-left: 10%
-	}
-
-	.bottom-mainTitle {
-		font-size: 25px;
-		height: 60px;
-		line-height: 60px;
-	}
-
-	.bottom-sideTitle {
-		color: #ddd;
-		line-height: 60px;
-		height: 60px;
-	}
-
-	.bottom-content {
-		height: 30px;
-		line-height: 30px;
-	}
-
-	.bottom-icon {
-		height: 60px;
-		line-height: 60px;
-	}
-
-	.bottom-link {
-		height: 60px;
-		line-height: 100px;
-	}
+    .bottom-icon {
+        padding: 10px 0 10px 0;
+        /* height: 0px; */
+        /* line-height: 60px; */
+    }
+    .bottom-icon img {
+        width: 100px;
+        height: 100px;
+    }
+    .bottom-link {
+        height: 40px;
+        line-height: 40px;
+    }
+    .cutLine {
+        position: relative;
+        height: 20px;
+        width: 900px;
+        max-width: 100%;
+        /* transform: translate(-30px); */
+        /* margin: 0 0; */
+        border-radius: 0 10px 10px 0;
+        background-image: radial-gradient(
+            circle 248px at center,
+            #16d9e3 0%,
+            #30c7ec 47%,
+            #46aef7 100%
+        );
+    }
+    .cutLine::before {
+        content: '';
+        position: absolute;
+        top: -60px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+        background-image: url('../../assets/008.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .copyright {
+        vertical-align: top;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+    .bottom-content a {
+        color: #fff !important;
+    }
 </style>

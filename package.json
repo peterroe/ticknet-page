@@ -1,23 +1,35 @@
 {
-  "name": "default",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
-  },
-  "dependencies": {
-    "@better-scroll/core": "^2.3.0",
-    "better-scroll": "^2.3.0",
-    "core-js": "^2.6.5",
-    "element-ui": "^2.15.1",
-    "mouse-wheel": "^1.2.0",
-    "vue": "^2.6.10",
-    "vue-router": "^3.5.1"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-service": "^3.8.0",
-    "vue-template-compiler": "^2.6.10"
-  }
+    "name": "default",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "prettier": "prettier ** --write --ignore-unknown",
+        "eslint": "eslint ** --fix"
+    },
+    "dependencies": {
+        "@better-scroll/core": "^2.3.0",
+        "better-scroll": "^2.3.0",
+        "core-js": "^2.6.5",
+        "element-ui": "^2.15.1",
+        "mouse-wheel": "^1.2.0",
+        "vue": "^2.6.10",
+        "vue-router": "^3.5.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.8.0",
+        "@vue/cli-service": "^3.8.0",
+        "babel-eslint": "^10.1.0",
+        "compression-webpack-plugin": "^5.0.0",
+        "eslint": "^7.27.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-config-vue": "^2.0.2",
+        "eslint-plugin-import": "^2.23.3",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.1.0",
+        "eslint-plugin-vue": "^7.9.0",
+        "prettier": "^2.3.0",
+        "vue-template-compiler": "^2.6.10"
+    }
 }

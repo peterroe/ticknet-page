@@ -1,3 +1,5 @@
+/** @format */
+
 import Router from 'vue-router'
 import Vue from 'vue'
 
@@ -14,68 +16,64 @@ import Vue from 'vue'
 //const Layout = resolve => require(['@/pages/layout/index.vue'], resolve)
 const Layout = resolve => require(['@/pages/layout/index.vue'], resolve)
 const Home = resolve => require(['@/pages/home/index.vue'], resolve)
-const About = resolve => require(['@/pages/about/index.vue'], resolve)
+// const About = resolve => require(['@/pages/about/index.vue'], resolve)
 const Group = resolve => require(['@/pages/group/index.vue'], resolve)
 const Layer = resolve => require(['@/pages/layer/index.vue'], resolve)
 const Product = resolve => require(['@/pages/product/index.vue'], resolve)
 const Member = resolve => require(['@/pages/member/index.vue'], resolve)
 
-
 Vue.use(Router)
 
 export default new Router({
-	mode: 'history',
-	routes:[
-		{
-			path: '/',
-			name: '',
-			redirect: '/layout',
-			meta: {
-				title: ''
-			},
-			children:[
-				
-			]
-		},
-		{
-			path: '/layout',
-			name: 'root',
-			component: Layout,
-			meta: {
-				title: 'root'
-			},
-			children:[
-				
-			]
-		},
-		{
-			path: '/layer',
-			name: '首页',
-			component: Layer,
-			redirect: '/layer/home',
-			children: [
-				{
-					path: 'home',
-					component: Home
-				},
-				{
-					path: 'about',
-					component: About
-				},
-				{
-					path: 'group',
-					component: Group
-				},
-				{
-					path: 'product',
-					component: Product
-				},
-				{
-					path: 'member',
-					component: Member
-				},
-			]
-		}
-		
-	]
+    mode: 'history',
+    routes: [
+        {
+            path: '/',
+            name: '',
+            redirect: '/Layer',
+            meta: {
+                title: ''
+            },
+            children: []
+        },
+        // {
+        // 	path: '/layout',
+        // 	name: 'root',
+        // 	component: Layout,
+        // 	meta: {
+        // 		title: 'root'
+        // 	},
+        // 	children:[
+
+        // 	]
+        // },
+        {
+            path: '/layer',
+            name: '首页',
+            component: Layer,
+            redirect: '/layer/home',
+            children: [
+                {
+                    path: 'home',
+                    component: Home
+                },
+                // {
+                //     path: 'about',
+                //     component: About
+                // },
+                {
+                    path: 'group',
+                    component: Group
+                },
+                {
+                    path: 'product',
+                    component: Product
+                },
+                {
+                    path: 'member',
+                    component: Member
+                }
+            ]
+        }
+    ]
 })

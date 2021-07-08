@@ -1,0 +1,9 @@
+/src/assets/**
+/dist/**
+/node_modules/**
+/public/**
+/server/**
+*.js
+*.json
+*.md
+**/*.css
