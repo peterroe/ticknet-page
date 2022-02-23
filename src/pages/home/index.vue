@@ -38,10 +38,10 @@
             <div class="teamIntruduce-photo">
                 <el-row>
                     <el-col :xs="24" :span="12">
-                        <img src="../../assets/hj3.jpg" alt="" />
+                        <img src="https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/24c39755-5d83-4f60-a07a-876450df01d3.webp" alt="" />
                     </el-col>
                     <el-col :xs="24" :span="12">
-                        <img src="../../assets/hj4.jpg" alt="" />
+                        <img src="https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/17fae1a6-2bdd-4116-a331-70b0fc7ccd7e.webp" alt="" />
                     </el-col>
                 </el-row>
             </div>
@@ -81,7 +81,7 @@
                 </el-col>
                 <el-col :xs="24" :span="10">
                     <div class="achievement-img">
-                        <img src="../../assets/waityou.jpg" alt="" />
+                        <img src="https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/258f8846-40af-42a4-8a99-afcf2d118855.webp" alt="" />
                     </div>
                 </el-col>
             </el-row>
@@ -157,7 +157,7 @@
         content: '';
         width: 180px;
         height: 160px;
-        background-image: url(../../assets/006.png);
+        background-image: url('https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/fe7311c5-3318-4afe-8067-08ebac2b60f5.webp');
         background-repeat: no-repeat;
         background-size: 100%;
     }
@@ -186,7 +186,7 @@
         margin: 20px 0;
     }
     .teamHistory {
-        background-image: url(../../assets/预览图_千图网_编号33821555_01.png);
+        background-image: url('https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/4c0c7768-cf75-4eb9-823e-1b3224570c4b.webp');
         background-repeat: no-repeat;
         background-size: auto 100%;
         position: relative;
@@ -202,7 +202,7 @@
         content: '';
         width: 100px;
         height: 200px;
-        background-image: url(../../assets/002.png);
+        background-image: url('https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/2e95fc76-457e-4b8e-8079-8f88ee0293a5.webp');
         background-repeat: no-repeat;
         background-size: 100%;
     }
@@ -213,7 +213,7 @@
         content: '';
         width: 150px;
         height: 200px;
-        background-image: url(../../assets/007.png);
+        background-image: url('https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/b59c4cf6-35d1-47e4-a064-0d174f805d7b.webp');
         background-repeat: no-repeat;
         background-size: 100%;
     }
@@ -249,7 +249,7 @@
         right: 0px;
         width: 100px;
         height: 100px;
-        background-image: url(../../assets/004.png);
+        background-image: url('https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/cdf7c1f6-6c9e-43bb-8306-e9097eccbf87.webp');
         background-repeat: no-repeat;
         background-size: 100%;
     }
@@ -284,7 +284,7 @@
         width: 100%;
         /* min-height: 700px; */
         height: 500px;
-        background-image: url('../../assets/53.png');
+        background-image: url('https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/15f6dc0a-ebdd-48e4-8b54-5396fbf90f28.webp');
         background-repeat: no-repeat;
         background-size: 100% auto;
     }

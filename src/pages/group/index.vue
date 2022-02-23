@@ -19,7 +19,7 @@
                 <div class="g-content-sidetitle">后端工程师</div>
                 <div class="g-content-p">编写的代码在服务器端运行</div>
                 <div class="g-content-p">为产品提供可靠的数据接口</div>
-                <div class="g-content-p">PHP/Node/Java/Python</div>
+                <div class="g-content-p">Java、SpringBoot、PHP</div>
 
             </div>
 
@@ -28,7 +28,7 @@
                 <div class="g-content-sidetitle">前端工程师</div>
                 <div class="g-content-p">负责PC和移动端网页开发</div>
                 <div class="g-content-p">小程序、WebApp</div>
-                <div class="g-content-p">JavaScript、CSS、HTML</div>
+                <div class="g-content-p">Vue.js、Node.js</div>
 
             </div>
             <div class="g-content">
@@ -78,7 +78,7 @@
     }
     .g-content {
         position: relative;
-        background-image: url(../../assets/hb.jpg);
+        background-image: url('https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/8b621b7f-7900-45b6-b08c-8a79a1334b1f.webp');
         background-size: 100%;
         background-repeat: no-repeat;
         width: 240px;

@@ -2,20 +2,20 @@
  * @FileDescription: layer
  * @Author: 林舒恒
  * @Date: 2021.4.19
- * @LastEditors: 林舒恒
- * @LastEditTime: 2021.5.20
+ * @LastEditors: peterroe
+ * @LastEditTime: 2021-11-05 13:35:30
  -->
 <template>
     <!-- <scroll class="scroll-wrapper" ref="scroll"> -->
     <div class="layer animated fadeIn">
         <div class="rocket animated">
-            <img src="../../assets/rocket.png" alt="" />
+            <img src="https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/a8d0c947-7211-4ce8-80ff-9128abb0d8e0.webp" alt="" />
         </div>
         <div class="layer-head">
             <el-row class="container">
                 <el-col :xs="24" :sm="10" :span="12" class="layer-head-left">
                     <div class="head-logo-title">
-                        <img src="../../assets/logo4.jpg" alt="" class="logo" />
+                        <img src="https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/4c9bc131-9503-4708-b528-e19b66f0eb80.webp" alt="" class="logo" />
                         <span> TickNet Studio </span>
                     </div>
                 </el-col>
@@ -49,7 +49,7 @@
                             邮箱：2402007575@qq.com
                         </div>
                         <div class="bottom-icon">
-                            <img src="../../assets/QQcode.png" alt="" />
+                            <img src="https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/7633bc97-231d-4be8-b94f-4935be4ecbd0.webp" alt="" />
                         </div>
                     </el-col>
                 </el-row>
@@ -344,7 +344,7 @@ export default {
         left: 20px;
         width: 80px;
         height: 80px;
-        background-image: url('../../assets/008.png');
+        background-image: url('https://hnust-ticknet-swzl.oss-cn-hangzhou.aliyuncs.com/secondClass/2021/11/05/2a5c8319-7b31-4bc4-b11a-db3380295b81.webp');
         background-size: 100%;
         background-repeat: no-repeat;
     }

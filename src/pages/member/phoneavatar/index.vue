@@ -6,7 +6,7 @@
         <el-row>
             <el-col :span="12">
                 <div v-if="imgs[0]" class="showMsg">
-                    <img :src="imgs[0].imgsrc" />
+                    <img :src="imgs[0].imgsrc" alt="成员头像" />
                 </div>
             </el-col>
             <el-col :span="12">
@@ -29,7 +29,7 @@
                 @click.capture.stop="shut(index)"
             >
                 <div>
-                    <img :src="img.imgsrc" />
+                    <img :src="img.imgsrc" alt="成员头像"/>
                 </div>
             </div>
         </transition-group>
@@ -112,26 +112,28 @@
         z-index: 5;
         width: 170px;
         /* height: 170px; */
-        padding: 10px;
+        padding: 20px;
         margin: 0 0 20px 0;
+        border-radius: 10px 0 0 10px;
+        background-color: #8999d2;
     }
-    .a-content::after {
+    /* .a-content::after {
         content: '';
         width: 170px;
         height: 120px;
-        /* max-width: 80%; */
+        
         border-radius: 10px 0 0 10px;
+        background-color: #8999d2;
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
         left: 0;
         z-index: -1;
-        background-color: #8999d2;
-    }
+    } */
     .a-content-title {
-        font-size: 22px;
-        height: 40px;
-        line-height: 40px;
+        /* font-size: 22px; */
+        /* height: 40px; */
+        /* line-height: 40px; */
     }
     /* @keyframes roY {
         0% {
@@ -217,7 +219,7 @@
             right: 0px;
             top: 0;
             width: 270px;
-            height: 100px;
+            /* height: 100px; */
             padding: 10px;
             margin: 0 0 20px 0;
         }

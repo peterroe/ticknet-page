@@ -12,7 +12,7 @@
         </div>
         <div class="img-transfer">
             <div class="img-foot">
-                <img :src="imgsrc" alt="" />
+                <img :src="imgsrc" alt="用户头像" />
             </div>
         </div>
     </div>

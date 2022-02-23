@@ -13,17 +13,17 @@ body {
 
 @font-face {
     font-family: 'llcht';
-    src: url('../assets/font/字魂2号-力量粗黑体.ttf');
+    src: url('../assets/font/字魂2号-力量粗黑体.woff2');
 }
 
 @font-face {
     font-family: 'byys';
-    src: url('../assets/font/字魂45号-冰宇雅宋.ttf');
+    src: url('../assets/font/字魂45号-冰宇雅宋.woff2');
 }
 
 @font-face {
     font-family: 'zch';
-    src: url('../assets/font/字魂58号-创中黑.ttf');
+    src: url('../assets/font/字魂58号-创中黑.woff2');
 }
 
 body::-webkit-scrollbar {

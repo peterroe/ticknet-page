@@ -23,109 +23,109 @@
             return {
                 imgs:[
                 {
-                    imgsrc: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1004953359,2131419137&fm=11&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/4bd107f2c292495a8ffbcf18064745ce.webp',
                     row: '1',
                     col: '1',
                     no: 'kjl',
-                    name: '杰罗姆',
-                    p: '不要因为没有掌声就放弃梦想'
+                    name: '',
+                    p: '程序员的问题是你无法预料他在做什么，直到为时已晚'
                 },
                 {
-                    imgsrc: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3155998395,3600507640&fm=26&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/2339b12d0dea454cbab81895824ef663.webp',
                     row: '1',
                     col: '2',
                     no: 'yui',
-                    name: '伊迪斯',
-                    p: '但愿日子清静，抬头遇见的都是柔情'
+                    name: '',
+                    p: '就算它工作不正常也别担心。如果一切正常，你早该失业了'
                 },
                 {
-                    imgsrc: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1709216491,2536617744&fm=26&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/d96621e9b12b4d3683c7bf6e99b86ab2.webp',
                     row: '1',
                     col: '3',
                     no: 'fhj',
-                    name: '阿尔瓦',
-                    p: '对于值得与热爱的事情，就要做到极致'
+                    name: '',
+                    p: '首先学习计算机科学及理论。接着形成自己编程的风格。然后把这一切都忘掉，尽管改程序就是了'
                 },
                 {
-                    imgsrc: 'https://img2.baidu.com/it/u=325567737,3478266281&fm=26&fmt=auto&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/2a0fa2e287a64689937e791c9cca84ff.webp',
                     row: '1',
                     col: '4',
                     no: 'ddd',
-                    name: '埃琳娜',
-                    p: '你什么都不知道，包括我喜欢你'
+                    name: '',
+                    p: '计算机没什么用。他们只会告诉你答案'
                 },
                 {
-                    imgsrc: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1475331839,2066156315&fm=26&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/7410dcb0ee8b44e58cb089ad981ff68d.webp',
                     row: '1',
                     col: '5',
                     no: 'dfg',
-                    name: '亚伯拉罕',
-                    p: '活得太清醒本就是件不浪漫的事'
+                    name: '',
+                    p: 'Just do it。很多孩子听了乔丹的话，从此进入it行业'
                 },
                 {
-                    imgsrc: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1545190233,2172456233&fm=26&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/f82679dd003d4bb7a15dd3f604951f9c.webp',
                     row: '2',
                     col: '2',
                     no: 'sfgfh',
-                    name: '伊斯特尔',
-                    p: '火苗再小，也可以反复点燃'
+                    name: '',
+                    p: '好的软件的作用是让复杂的东西看起来简单'
                 },
                 {
-                    imgsrc: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3641306367,2787304394&fm=26&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/4e5653088f674d9284e093dc0784494a.webp',
                     row: '2',
                     col: '3',
                     no: 'ghj',
-                    name: '安东尼',
-                    p: '总要尝遍所有的路，在对生活充满期待'
+                    name: '',
+                    p: '计算机会不会思考这个问题就像问潜水艇会不会游泳一样'
                 },
                 {
-                    imgsrc: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2013128738,1744245349&fm=26&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/3c8dfaf680d9433886f97c913caf408c.webp',
                     row: '2',
                     col: '4',
                     no: 'asfgfg',
-                    name: '洛福斯',
-                    p: '从此天光大亮，你是我全部的渴望与幻想'
+                    name: '',
+                    p: '我终于明白‘向上兼容性’是怎么回事了。这是指我们得保留所有原有错误。'
                 },
     
                 {
-                    imgsrc: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3222454269,3484359568&fm=26&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/28bd63c7bf09444c8a008c89a5cfe66b.webp',
                     row: '2',
                     col: '5',
                     no: 'ktyu',
-                    name: '埃尔维斯',
-                    p: '所有的温柔都源于你的强大'
+                    name: '',
+                    p: '控制复杂性是计算机编程的本质。'
                 },
                 {
-                    imgsrc: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2622623191,3152180496&fm=26&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/17db4a341b2545648fddd87859ed5b2b.webp',
                     row: '3',
                     col: '2',
                     no: 'yjkh',
-                    name: '埃德温',
-                    p: '努力让自己发光，对的人才会迎光而来'
+                    name: '',
+                    p: '不管演示在彩排的时候有多好，一旦在观众面前展示时，演示不出错的几率与观众人数成反比'
                 },
                 {
-                    imgsrc: 'https://img0.baidu.com/it/u=1001760444,1818781497&fm=26&fmt=auto&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/c7b2ec67cd2646c89e2d8e33eb24fe83.webp',
                     row: '3',
                     col: '3',
                     no: 'ghkn',
-                    name: '格伦',
-                    p: '记得在这杂乱的生活里，每天带点笑意'
+                    name: '',
+                    p: '靠代码行数来衡量开发进程就好比用重量来衡量飞机制造的进度'
                 },
                 {
-                    imgsrc: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1709644436,2739756540&fm=26&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/c99ad299252b47ef9fe3cee6dce69ffa.webp',
                     row: '3',
                     col: '4',
                     no: 'hjkty',
-                    name: '伊迪斯',
-                    p: '有人喝了酒眼睛亮闪闪的讲浪漫和爱'
+                    name: '',
+                    p: '要是Java真的有垃圾回收的话，大部分程序在执行的时候就会把自己干掉了'
                 },
                 {
-                    imgsrc: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2100401123,2895311668&fm=26&gp=0.jpg',
+                    imgsrc: 'https://img-blog.csdnimg.cn/505695a0292445948f808e1af821062d.webp',
                     row: '5',
                     col: '3',
                     no: 'htj',
-                    name: '沃伦',
-                    p: '你的心，是我想要到达的蔚蓝海岸'
+                    name: '',
+                    p: '计算机语言设计犹如在公园里漫步。我是说侏罗纪公园'
                 }
             ]
             }

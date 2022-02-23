@@ -1,3 +1,10 @@
+/*
+ * @Descripttion: 
+ * @Author: 林舒恒
+ * @Date: 2021-04-26 17:04:11
+ * @LastEditors: 林舒恒
+ * @LastEditTime: 2021-09-18 20:59:23
+ */
 /** @format */
 
 import Router from 'vue-router'
@@ -16,7 +23,7 @@ import Vue from 'vue'
 //const Layout = resolve => require(['@/pages/layout/index.vue'], resolve)
 const Layout = resolve => require(['@/pages/layout/index.vue'], resolve)
 const Home = resolve => require(['@/pages/home/index.vue'], resolve)
-// const About = resolve => require(['@/pages/about/index.vue'], resolve)
+    // const About = resolve => require(['@/pages/about/index.vue'], resolve)
 const Group = resolve => require(['@/pages/group/index.vue'], resolve)
 const Layer = resolve => require(['@/pages/layer/index.vue'], resolve)
 const Product = resolve => require(['@/pages/product/index.vue'], resolve)
@@ -25,9 +32,8 @@ const Member = resolve => require(['@/pages/member/index.vue'], resolve)
 Vue.use(Router)
 
 export default new Router({
-    mode: 'history',
-    routes: [
-        {
+    mode: 'hash',
+    routes: [{
             path: '/',
             name: '',
             redirect: '/Layer',
@@ -52,8 +58,7 @@ export default new Router({
             name: '首页',
             component: Layer,
             redirect: '/layer/home',
-            children: [
-                {
+            children: [{
                     path: 'home',
                     component: Home
                 },
